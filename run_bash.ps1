@@ -1,0 +1,1 @@
+python MCNN_PLM.py -maxseq 1000 -f 256 -w 4 -nf 1024 -dt "A" -df "pt" -imb "None" -k 0 -csv "pred.csv"
