@@ -1,0 +1,6 @@
+Download test sets from our open links below and save them in get_feature folder:
+
+ClassA:
+https://drive.google.com/file/d/1NxNej8-fe4sxKAMicajUCm1vgVsn-J-S/view?usp=sharing
+ClassB:
+https://drive.google.com/file/d/1j8kMuUFc28WUpKtX-wzxQXMLKa0PLGwv/view?usp=sharing
