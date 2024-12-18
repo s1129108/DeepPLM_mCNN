@@ -181,7 +181,8 @@ def get_predict(x_test, y_test):
     return TP, FP, TN, FN, Sens, Spec, Acc, MCC, roc_auc, F1
 
 "====================================== train data lodding ======================================"
-train_npz = np.load(f"get_feature/example/{DATA_FEATURE}_d{NUM_FEATURE}_L{MAXSEQ}/Class_{DATA_TYPE}_L{MAXSEQ}_d{NUM_FEATURE}_{IMBALANCE}_{DATA_FEATURE}.npz")
+#train_npz = np.load(f"get_feature/example/{DATA_FEATURE}_d{NUM_FEATURE}_L{MAXSEQ}/Class_{DATA_TYPE}_L{MAXSEQ}_d{NUM_FEATURE}_{IMBALANCE}_{DATA_FEATURE}.npz")
+train_npz = np.load(f"get_feature/{DATA_FEATURE}_d{NUM_FEATURE}_L{MAXSEQ}/Class_{DATA_TYPE}_L{MAXSEQ}_d{NUM_FEATURE}_{IMBALANCE}_{DATA_FEATURE}.npz")
 
 x_train = train_npz["feature"]
 y_train = train_npz["label"]
@@ -240,7 +241,8 @@ if K_Fold == 0:
     "====================================== predict ======================================"
     time_log("Start Model Test")
     "====================================== test data lodding ======================================"
-    test_npz = np.load(f"get_feature/example/{DATA_FEATURE}_d{NUM_FEATURE}_L{MAXSEQ}/Class_{DATA_TYPE}_L{MAXSEQ}_d{NUM_FEATURE}_test_{DATA_FEATURE}.npz")
+    # test_npz = np.load(f"get_feature/example/{DATA_FEATURE}_d{NUM_FEATURE}_L{MAXSEQ}/Class_{DATA_TYPE}_L{MAXSEQ}_d{NUM_FEATURE}_test_{DATA_FEATURE}.npz")
+    test_npz = np.load(f"get_feature/{DATA_FEATURE}_d{NUM_FEATURE}_L{MAXSEQ}/Class_{DATA_TYPE}_L{MAXSEQ}_d{NUM_FEATURE}_test_{DATA_FEATURE}.npz")
 
     x_test = test_npz["feature"]
     y_test = test_npz["label"]
